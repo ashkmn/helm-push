@@ -7,7 +7,8 @@ if [ -n "${HELM_PUSH_PLUGIN_NO_INSTALL_HOOK}" ]; then
     exit 0
 fi
 
-version="$(cat plugin.yaml | grep "version" | cut -d '"' -f 2)"
+version="0.10.3"
+# version="$(cat plugin.yaml | grep "version" | cut -d '"' -f 2)"
 echo "Downloading and installing helm-push v${version} ..."
 
 url=""
